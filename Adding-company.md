@@ -20,18 +20,11 @@
   - https://mariadb.org/get-involved/getting-started-for-developers/get-code-build-test/
   - https://mariadb.com/kb/en/get-build-and-test-latest-mariadb-the-lazy-way/
   - https://mariadb.com/kb/en/Building_MariaDB_on_Windows/
-## Windows PATH adding
-
-
-## Windows cmake
-> install vcpkg
-> install libraries using vcpkg
-> Do according to comments in storage/oqgraph/cmake/FindJudy.cmake
-   -  environment variable setting : JUDY_ROOT=C:\src\Judy-1.0.5
-> use "Developer Command Prompt" instead of normal CMD
-> set system locale to "United States" in control panel
-> ## not working ## cmake ../server "-DCMAKE_TOOLCHAIN_FILE=C:\\src\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
-> cmake ../server "-DCMAKE_PREFIX_PATH=C:/src/vcpkg/installed/x86-windows" -DWITH_ROCKSDB_ZSTD=OFF
-> cmake --build . --parallel 5
-> cmake --build . --target MSI
-> cmake --build . --config relwithdebinfo --target MSI
+- Linux MariaDB build
+  - I built MariaDB using Ubuntu 22.04.1 LTS and there was no problem.
+- Windows MariaDB build
+  - I built MariaDB using Windows 10 and Visual Studio 2022 Community Edition and there were some precautions.
+  - Recommend using "Developer Command Prompt for Visual Studio" instead of normal Command Prompt.
+  - Set system locale to "United States" in control panel.
+    - Otherwise, you cannot build MariaDB because of the warning C4819 (The file contains a character that cannot be represented in the current code page)
+  - Installer build example : cmake --build . --config relwithdebinfo --target MSI
