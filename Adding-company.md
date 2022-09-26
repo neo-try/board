@@ -1,5 +1,5 @@
 ## Adding company in the client tool mysql(same with mariadb) and the Windows installer
-- This document assue the company name as ADS. 
+- This document assumes the company name as ADS. 
 - Source code update
 ```
 > client tool : 
