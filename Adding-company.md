@@ -1,4 +1,4 @@
-#### Adding company in the client tool mysql(same with mariadb) and the Windows installer
+## Adding company in the client tool mysql(same with mariadb) and the Windows installer
 - This document assue the company name as ADS. 
 - Source code update
 ```
@@ -15,7 +15,7 @@
   - TO   : SET(CPACK_WIX_PACKAGE_NAME "MariaDB ${MAJOR_VERSION}.${MINOR_VERSION} by ADS (${WIX_ARCH})")
 ```
 
-#### Building MariaDB from source
+## Building MariaDB from source
 - Reference
   - https://mariadb.org/get-involved/getting-started-for-developers/get-code-build-test/
   - https://mariadb.com/kb/en/get-build-and-test-latest-mariadb-the-lazy-way/
@@ -29,7 +29,10 @@
     - Otherwise, you cannot build MariaDB because of the warning C4819 (The file contains a character that cannot be represented in the current code page)
   - Installer build example : cmake --build . --config relwithdebinfo --target MSI
 
-#### Windows Install screen capture
+## client tool screen capture
+![](media/client-1.png)
+
+## Windows Install screen capture
 ![](media/install-1.png)
 ![](media/install-2.png)
 ![](media/install-3.png)
@@ -39,7 +42,7 @@
 ![](media/install-7.png)
 ![](media/install-8.png)
 
-#### Windows Uninstall screen capture
+## Windows Uninstall screen capture
 ![](media/uninstall-1.png)
 ![](media/uninstall-2.png)
 ![](media/uninstall-3.png)
