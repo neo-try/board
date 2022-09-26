@@ -28,3 +28,20 @@
   - Set system locale to "United States" in control panel.
     - Otherwise, you cannot build MariaDB because of the warning C4819 (The file contains a character that cannot be represented in the current code page)
   - Installer build example : cmake --build . --config relwithdebinfo --target MSI
+
+#### Windows Install screen capture
+![](media/install-1.png)
+![](media/install-2.png)
+![](media/install-3.png)
+![](media/install-4.png)
+![](media/install-5.png)
+![](media/install-6.png)
+![](media/install-7.png)
+![](media/install-8.png)
+
+#### Windows Uninstall screen capture
+![](media/uninstall-1.png)
+![](media/uninstall-2.png)
+![](media/uninstall-3.png)
+![](media/uninstall-4.png)
+![](media/uninstall-5.png)
