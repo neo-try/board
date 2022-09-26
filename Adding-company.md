@@ -15,11 +15,13 @@
   - TO   : SET(CPACK_WIX_PACKAGE_NAME "MariaDB ${MAJOR_VERSION}.${MINOR_VERSION} by ADS (${WIX_ARCH})")
 ```
 
-
-
+#### Building MariaDB from source
+- Reference
+  - https://mariadb.org/get-involved/getting-started-for-developers/get-code-build-test/
+  - https://mariadb.com/kb/en/get-build-and-test-latest-mariadb-the-lazy-way/
+  - https://mariadb.com/kb/en/Building_MariaDB_on_Windows/
 ## Windows PATH adding
-> C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
-> C:\GnuWin32\bin\bison.exe & diff.exe
+
 
 ## Windows cmake
 > install vcpkg
