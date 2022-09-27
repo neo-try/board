@@ -25,7 +25,7 @@
 - Windows MariaDB build
   - I built MariaDB using Windows 10 and Visual Studio 2022 Community Edition and there were some precautions.
   - Recommend using "Developer Command Prompt for Visual Studio" instead of normal Command Prompt.
-  - Set system locale to "United States" in control panel.
+  - Change system locale to "English(United States)" in control panel.
     - Otherwise, you cannot build MariaDB because of the warning C4819 (The file contains a character that cannot be represented in the current code page)
   - Installer build example : cmake --build . --config relwithdebinfo --target MSI
 
